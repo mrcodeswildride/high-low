@@ -1,0 +1,39 @@
+body {
+  background-color: beige;
+}
+
+p {
+  font-size: 24px;
+}
+
+button {
+  padding: 5px;
+}
+
+#numberParagraph {
+  margin-bottom: 0;
+}
+
+#betParagraph,
+#betSlider {
+  display: none;
+  vertical-align: middle;
+}
+
+#betParagraph {
+  margin-right: 20px;
+}
+
+#higherPayoutParagraph {
+  margin-top: 0;
+}
+
+#higherButton,
+#lowerButton,
+#playAgainButton {
+  display: none;
+}
+
+#higherButton {
+  margin-right: 5px;
+}
