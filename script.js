@@ -39,10 +39,10 @@ function pickNumber() {
 function changeBet() {
   betParagraph.innerHTML = `Bet: $${betSlider.value}`
 
-  higherPayout = 10 / (9 - number) * betSlider.value
+  higherPayout = (10 / (9 - number)) * betSlider.value
   higherPayoutParagraph.innerHTML = `Payout for higher: $${higherPayout.toFixed(2)}`
 
-  lowerPayout = 10 / number * betSlider.value
+  lowerPayout = (10 / number) * betSlider.value
   lowerPayoutParagraph.innerHTML = `Payout for lower: $${lowerPayout.toFixed(2)}`
 }
 
@@ -58,8 +58,7 @@ function chooseHigher() {
     resultParagraph.innerHTML = `The next number is ${nextNumber}. You won $${amountWon.toFixed(2)}`
 
     money = money + amountWon
-  }
-  else {
+  } else {
     resultParagraph.innerHTML = `The next number is ${nextNumber}. You lost $${betSlider.value}`
     money = money - betSlider.value
   }
@@ -80,8 +79,7 @@ function chooseLower() {
     resultParagraph.innerHTML = `The next number is ${nextNumber}. You won $${amountWon.toFixed(2)}`
 
     money = money + amountWon
-  }
-  else {
+  } else {
     resultParagraph.innerHTML = `The next number is ${nextNumber}. You lost $${betSlider.value}`
     money = money - betSlider.value
   }

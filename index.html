@@ -1,34 +1,30 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>High Low</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <script src="script.js" defer></script>
+  </head>
 
-<head>
-	<title>High Low</title>
-	<meta name="viewport" content="width=device-width, initial-scale=0.75">
-	<link href="style.css" rel="stylesheet">
-	<script src="script.js" defer>
+  <body>
+    <h1>High Low</h1>
 
-	</script>
-</head>
+    <p id="moneyParagraph">Money: $100.00</p>
+    <button id="numberButton">Pick a number between 0 and 9</button>
+    <p id="numberParagraph"></p>
 
-<body>
-	<h1>High Low</h1>
+    <div>
+      <p id="betParagraph">Bet: $1</p>
+      <input type="range" min="1" max="5" value="1" id="betSlider" />
+    </div>
 
-	<p id="moneyParagraph">Money: $100.00</p>
-	<button id="numberButton">Pick a number between 0 and 9</button>
-  <p id="numberParagraph"></p>
+    <p id="higherPayoutParagraph"></p>
+    <p id="lowerPayoutParagraph"></p>
+    <button id="higherButton">Higher</button>
+    <button id="lowerButton">Lower</button>
 
-  <div>
-    <p id="betParagraph">Bet: $1</p>
-    <input type="range" min="1" max="5" value="1" id="betSlider">
-  </div>
-
-  <p id="higherPayoutParagraph"></p>
-  <p id="lowerPayoutParagraph"></p>
-  <button id="higherButton">Higher</button>
-  <button id="lowerButton">Lower</button>
-
-  <p id="resultParagraph"></p>
-  <button id="playAgainButton">Play again</button>
-</body>
-
+    <p id="resultParagraph"></p>
+    <button id="playAgainButton">Play again</button>
+  </body>
 </html>
